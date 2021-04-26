@@ -1,0 +1,81 @@
+html, body{
+    background: url(./img/ToDoBg.png) no-repeat center fixed;
+    width: 50%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color:black;
+    text-shadow: 5px 2px 5px blue;
+    animation-name: colorchangess;
+    animation-duration : 5s;
+    animation-iteration-count: infinite;
+}
+
+.container{
+    width: 360px;
+}
+
+@keyframes colorchangess {
+    0% {color: black;}
+    25%   {color: red;}
+    50%   {color: greenyellow;}
+    100% {color:honeydew;}
+    50%   {color: greenyellow;}
+    25%   {color: red;}
+    100% {color: black;} 
+  }
+
+#inputField{
+    width: 300px;
+    height: 48px;
+    outline: none;
+    font-size: 45px;
+    vertical-align: middle;
+    outline-style: solid;
+    outline-color: cadetblue;
+}
+
+#addToDo{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    vertical-align: middle;
+    font-size: 30px;
+    outline-style: solid;
+    outline-color: rgb(66, 118, 214);
+}
+
+#addToDo:hover{
+    background: rgb(135, 172, 252);
+}
+
+.to-dos{
+    margin-top: 25px;
+}
+
+.paragraph-styling{
+    border-radius: 25px;
+    border: 2px solid #d6f7a8;
+    padding: 20px;
+    background-color: white;
+    margin-top: -15px;
+    cursor:pointer;
+    font-size: 20px;
+}
+
+.close{
+    left:50px;
+    padding: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+    top:-63px;
+    left:300px;
+    border-style : dashed;
+    border-radius: 25px;
+  }
+
+  .close:hover {background: rgb(231, 153, 153);}
+
